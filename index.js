@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
     logo.style.opacity = '1';
     logo.style.display = 'block';
     isLogoVisible = true;
-  } else if (currentScrollPos > 0 && isLogoVisible) { // Hide logo when scrolling down
+  } else if (currentScrollPos > 100 && isLogoVisible) { // Hide logo when scrolling down
     logo.style.opacity = '0';
     isLogoVisible = false;
     setTimeout(function() {
