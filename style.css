@@ -78,3 +78,11 @@
     border-radius: .75rem;
 }
 
+
+@media (max-width: 390px) {
+	#navbar{
+		font-size: 1.2rem;
+	}
+	
+  }
+  
