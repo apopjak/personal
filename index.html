@@ -9,121 +9,218 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="icon" type="favicon" href="/images/favicon.png">
+    <title>Andrej Popjak - PersonalSite</title>
 </head>
 <body>
+<div class="container" style="width: 80%;">
+  <!-- NAVBAR -->
 
-    <!-- NAVBAR -->
-
-    <nav class="navbar col-12 navbar-expand-lg text-bg-dark fixed-top"  style="box-shadow: 0 8px 4px rgba(0, 0, 0, 0.4);">
-        <div class="container d-flex flex-column align-items-center">
-            <div id="logo" class="logo-transition">                
-                <span class="d-flex">Popjak</span>           
-            </div>
-            <div id="navbar" class="navbar-transition">
-                <ul class="nav justify-content-center">
-                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>                                    
-                    <li><a href="#" class="nav-link px-2 text-white">Portfolio</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white skills">Skills</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Contacts</a></li>
-                </ul>
-            </div>              
-        </div>   
-    </nav>
-    
-    
-    
-    <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO -->
-    <hr style="border: 20px black solid;">
-    
-
-    <div class="animated-bg px-4 pt-5 my-5 text-center border-bottom shadow p-3 mb-5 bg-white rounded ">
-        <h1 id="aboutme" class="display-4 fw-bold text-body-emphasis">About me </h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">I am a disciplined and hardworking individual seeking a junior Java position. With a strong passion for Java programming, I possess a solid understanding of object-oriented concepts and have hands-on experience in developing applications using Java. I am eager to contribute my skills to a collaborative team environment and continue learning from experienced professionals. Thank you for considering my application."
-            </p>
-            <p>Feel free to contact me at any time</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-            
-            <!-- GITHUB BUTTON -->
-        <div>
-            <a href="https://github.com/apopjak">
-            <img src="images/icons8-github.svg" alt="Github Button">
-            </a>
-          <p>Github</p>
-        </div>
-
-        <!-- LINKEDIN BUTTON -->
-        <div>
-            <a href="https://www.linkedin.com/in/andrej-popjak/">
-            <img src="images/icons8-linkedin.svg" alt="LinkedIn button">
-            </a>
-          <p>LinkedIn</p>        
+  <nav class="navbar col-12 navbar-expand-lg text-bg-dark fixed-top"  style="box-shadow: 0 8px 4px rgba(0, 0, 0, 0.4);">
+      <div class="container d-flex flex-column align-items-center">
+          <div id="logo" class="logo-transition">                
+              <span class="d-flex">Andrej POPJAK</span>           
           </div>
-        </div>
-        </div>
+          <div id="navbar" class="navbar-transition">
+              <ul class="nav justify-content-center">
+                  <li><a class="nav-link px-2" id="home">Home</a></li>                                    
+                  <li><a class="nav-link px-2" id="portfolio">Portfolio</a></li>
+                  <li><a class="nav-link px-2" id="skills">Skills</a></li>
+                  <li><a class="nav-link px-2" id="contacts">Contacts</a></li>
+              </ul>
+          </div>              
+      </div>   
+  </nav>
+  <hr style="border: 5% black solid ;">
+  
+  
+  <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO -->
 
 
-        <div class="overflow-hidden">
-          <div class="container px-5 ">
-            <img src="images/profile-pic.png" class="img-fluid  border rounded-6 mb-5" style="border-radius: 50%; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);" alt="Example image" width="300">
-          </div>
-        </div>
+  <div id="home-window" class="mt-5 pt-5  text-center border-bottom shadow bg-white rounded ">
+      <h1 id="aboutme" class="display-4 fw-bold text-body-emphasis">About me </h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">I am a disciplined and hardworking individual seeking a junior Java position. With a strong passion for Java programming, I possess a solid understanding of object-oriented concepts and have hands-on experience in developing applications using Java. I am eager to contribute my skills to a collaborative team environment and continue learning from experienced professionals. Thank you for considering my application."
+          </p>
+          <p>Feel free to contact me at any time</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          
+          <!-- GITHUB BUTTON -->
+      <div>
+          <a href="https://github.com/apopjak">
+          <img src="images/about/icons8-github.svg" alt="Github Button">
+          </a>
+        <p>Github</p>
       </div>
 
+      <!-- LINKEDIN BUTTON -->
+      <div>
+          <a href="https://www.linkedin.com/in/andrej-popjak/">
+          <img src="images/about/icons8-linkedin.svg" alt="LinkedIn button">
+          </a>
+        <p>LinkedIn</p>        
+        </div>
+      </div>
+      </div>
+      <div class="container img-overflow pb-5">
+        <img  id="profile-pic" src="images/profile-pic.png" class="" alt="Example image">
+      </div>
+      </div>
+    </div>
 
 
-    <!-- SKILLS  --> <!-- SKILLS  --> <!-- SKILLS  --> <!-- SKILLS  --> <!-- SKILLS  --> <!-- SKILLS  --> <!-- SKILLS  --> <!-- SKILLS  --> 
-    <div class="px-4 pt-5 my-5 text-center border-bottom shadow p-3 mb-5 bg-white rounded" id="featured-3">
-        <h1 class="pb-2 border-bottom">My Skills</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="feature col">
-            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40px" fill="currentColor" class="bi bi-filetype-java" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.521 15.175a1.321 1.321 0 0 1-.082-.466h.765a.577.577 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466V11.85h.79v2.725c0 .44-.118.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.568-.094 1.144 1.144 0 0 1-.408-.266 1.139 1.139 0 0 1-.243-.39Zm3.972-.354-.314 1.028h-.8l1.342-3.999h.926l1.336 3.999h-.84l-.314-1.028H5.493Zm1.178-.59-.49-1.616h-.035l-.49 1.617h1.015Zm2.342 1.618h.952l1.327-3.999h-.878l-.888 3.138h-.038L8.59 11.85h-.917l1.34 3.999Zm3.087-1.028-.314 1.028h-.8l1.342-3.999h.926l1.336 3.999h-.84l-.314-1.028H12.1Zm1.178-.59-.49-1.616h-.035l-.49 1.617h1.015Z"/>
-                  </svg>
-            </div>
-            <h3 class="fs-2 text-body-emphasis">Programming</h3>
-            <p>JAVA | Spring Boot 3 | RESTful APIs | Python</p>
-            <p>Docker | GIT | JIRA | Linux | Maven | IntelliJ | Visual Studio Code</p>
+
+  <!-- SKILLS  --> <!-- SKILLS  --> <!-- SKILLS  --> <!-- SKILLS  --> <!-- SKILLS  --> <!-- SKILLS  --> <!-- SKILLS  --> <!-- SKILLS  --> 
+  <div class="container ">
+  <div class="px-4 pt-5 my-5 text-center border-bottom shadow p-3 mb-5 bg-white rounded" id="skills-window">
+      <h1 class="pb-2 border-bottom">My Skills</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40px" fill="currentColor" class="bi bi-filetype-java" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.521 15.175a1.321 1.321 0 0 1-.082-.466h.765a.577.577 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466V11.85h.79v2.725c0 .44-.118.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.568-.094 1.144 1.144 0 0 1-.408-.266 1.139 1.139 0 0 1-.243-.39Zm3.972-.354-.314 1.028h-.8l1.342-3.999h.926l1.336 3.999h-.84l-.314-1.028H5.493Zm1.178-.59-.49-1.616h-.035l-.49 1.617h1.015Zm2.342 1.618h.952l1.327-3.999h-.878l-.888 3.138h-.038L8.59 11.85h-.917l1.34 3.999Zm3.087-1.028-.314 1.028h-.8l1.342-3.999h.926l1.336 3.999h-.84l-.314-1.028H12.1Zm1.178-.59-.49-1.616h-.035l-.49 1.617h1.015Z"/>
+                </svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Programming</h3>
+          <p>JAVA | Spring Boot 3 | RESTful APIs | Python</p>
+          <p>Docker | GIT | JIRA | Linux | Maven | IntelliJ | Visual Studio Code</p>
+        </div>
+
+
+
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40px" fill="currentColor" class="bi bi-filetype-sql" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 14.841a1.129 1.129 0 0 0 .401.823c.13.108.288.192.478.252s.411.091.665.091c.338 0 .624-.053.858-.158.237-.106.416-.252.54-.44a1.17 1.17 0 0 0 .187-.656c0-.224-.045-.41-.135-.56a1 1 0 0 0-.375-.357 2.027 2.027 0 0 0-.565-.21l-.621-.144a.97.97 0 0 1-.405-.176.369.369 0 0 1-.143-.299c0-.156.061-.284.184-.384.125-.101.296-.152.513-.152.143 0 .266.022.37.068a.624.624 0 0 1 .245.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.199-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.552.05-.776.15-.225.099-.4.24-.528.421-.127.182-.19.395-.19.639 0 .201.04.376.123.524.082.149.199.27.351.367.153.095.332.167.54.213l.618.144c.207.049.36.113.462.193a.387.387 0 0 1 .153.325c0 .11-.029.207-.085.29A.558.558 0 0 1 2 15.31c-.111.047-.249.07-.413.07-.117 0-.224-.013-.32-.04a.835.835 0 0 1-.248-.115.579.579 0 0 1-.255-.384H0Zm6.878 1.489-.507-.739c.176-.162.31-.362.401-.6.092-.239.138-.507.138-.806v-.501c0-.371-.07-.693-.208-.967a1.495 1.495 0 0 0-.589-.636c-.256-.15-.561-.225-.917-.225-.351 0-.656.075-.914.225-.256.149-.453.36-.592.636a2.138 2.138 0 0 0-.205.967v.5c0 .37.069.691.205.965.139.273.336.485.592.636a1.8 1.8 0 0 0 .914.222 1.8 1.8 0 0 0 .6-.1l.294.422h.788ZM4.262 14.2v-.522c0-.246.038-.456.114-.63a.91.91 0 0 1 .325-.398.885.885 0 0 1 .495-.138c.192 0 .357.046.495.138a.88.88 0 0 1 .325.398c.077.174.115.384.115.63v.522c0 .164-.018.312-.053.445-.035.13-.087.244-.155.34l-.106-.14-.105-.147h-.733l.451.65a.638.638 0 0 1-.251.047.872.872 0 0 1-.487-.147.916.916 0 0 1-.32-.404 1.67 1.67 0 0 1-.11-.644Zm3.986 1.057h1.696v.674H7.457v-3.999h.79v3.325Z"/>
+                </svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">SQL</h3>
+          <p>SQL | PostgreSQL | SpringBoot JPA - Hibernate</p>
           </div>
 
 
 
-          <div class="feature col">
-            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40px" fill="currentColor" class="bi bi-filetype-sql" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 14.841a1.129 1.129 0 0 0 .401.823c.13.108.288.192.478.252s.411.091.665.091c.338 0 .624-.053.858-.158.237-.106.416-.252.54-.44a1.17 1.17 0 0 0 .187-.656c0-.224-.045-.41-.135-.56a1 1 0 0 0-.375-.357 2.027 2.027 0 0 0-.565-.21l-.621-.144a.97.97 0 0 1-.405-.176.369.369 0 0 1-.143-.299c0-.156.061-.284.184-.384.125-.101.296-.152.513-.152.143 0 .266.022.37.068a.624.624 0 0 1 .245.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.199-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.552.05-.776.15-.225.099-.4.24-.528.421-.127.182-.19.395-.19.639 0 .201.04.376.123.524.082.149.199.27.351.367.153.095.332.167.54.213l.618.144c.207.049.36.113.462.193a.387.387 0 0 1 .153.325c0 .11-.029.207-.085.29A.558.558 0 0 1 2 15.31c-.111.047-.249.07-.413.07-.117 0-.224-.013-.32-.04a.835.835 0 0 1-.248-.115.579.579 0 0 1-.255-.384H0Zm6.878 1.489-.507-.739c.176-.162.31-.362.401-.6.092-.239.138-.507.138-.806v-.501c0-.371-.07-.693-.208-.967a1.495 1.495 0 0 0-.589-.636c-.256-.15-.561-.225-.917-.225-.351 0-.656.075-.914.225-.256.149-.453.36-.592.636a2.138 2.138 0 0 0-.205.967v.5c0 .37.069.691.205.965.139.273.336.485.592.636a1.8 1.8 0 0 0 .914.222 1.8 1.8 0 0 0 .6-.1l.294.422h.788ZM4.262 14.2v-.522c0-.246.038-.456.114-.63a.91.91 0 0 1 .325-.398.885.885 0 0 1 .495-.138c.192 0 .357.046.495.138a.88.88 0 0 1 .325.398c.077.174.115.384.115.63v.522c0 .164-.018.312-.053.445-.035.13-.087.244-.155.34l-.106-.14-.105-.147h-.733l.451.65a.638.638 0 0 1-.251.047.872.872 0 0 1-.487-.147.916.916 0 0 1-.32-.404 1.67 1.67 0 0 1-.11-.644Zm3.986 1.057h1.696v.674H7.457v-3.999h.79v3.325Z"/>
-                  </svg>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="currentColor" class="bi bi-brush" viewBox="0 0 16 16">
+                  <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z"/>
+                </svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Web Development</h3>
+          <p>HTML | CSS | JavaScript (Vanilla) | Bootstrap</p>
+
+      </div>
+    </div>
+  </div> 
+</div>
+
+<!-- Carousel wrapper -->
+
+<div class="carousel-inner py-4 mb-5" id="portfolio-window">
+  <div class="carousel-item active mb-5 mt-5">
+    <div class="container">
+      <div class="row">
+
+        <!-- JAVA PORTFOLIO -->
+        <div class="col-lg-3">
+          <a href="https://github.com/apopjak/Website-CRUD" class="text-decoration-none">
+            <div class="card h-100 card-animation">
+              <img src="images/portfolio-images/java-project.png"  class="card-img-top" alt="Waterfall" />
+              <div class="card-body">
+                <h5 class="card-title">Website with Crud GUID</h5>
+                <p class="card-text">Java | SpringBoot | ThymeLeaf & Boostrap | AWS | Docker | PostgreSQL</p>
+                <p>
+                  Java and Spring Boot with the elegance of Thymeleaf and Bootstrap, creating a seamless and user-friendly experience. Leveraging Docker for effortless deployment to AWS and backed by a robust PostgreSQL database, it delivers a striking blend of functionality and aesthetics.
+                </p>
+              </div>
             </div>
-            <h3 class="fs-2 text-body-emphasis">SQL</h3>
-            <p>SQL | PostgreSQL | SpringBoot JPA - Hibernate</p>
+          </a>
+        </div>
+
+        <!-- RENTAL CAR PORTFOLIO -->
+        <div class="col-lg-3">
+          <a href="https://github.com/apopjak/Rental-Software-CLI" class="text-decoration-none">
+            <div class="card h-100 card-animation">
+              <img src="images/portfolio-images//carrental-project.png" class="card-img-top" alt="Sunset Over the Sea" />
+              <div class="card-body">
+                <h5 class="card-title">Car Rental CLI project</h5>
+                <p class="card-text">JAVA | Springboot Jpa | Docker | PostgreSQL</p>
+                <p>
+                  Renting Car Software CLI is a Java project showcasing a command-line interface (CLI) application for managing car rentals. Utilizing Java programming, it demonstrates functionalities such as booking, returning, and viewing rental history.
+                </p>
+              </div>
             </div>
+          </a>
+        </div>
 
-
-
-          <div class="feature col">
-            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="currentColor" class="bi bi-brush" viewBox="0 0 16 16">
-                    <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z"/>
-                  </svg>
+        <!-- PYTHON PORTFOLIO -->
+        <div class="col-lg-3">
+          <a href="https://github.com/apopjak/Python" class="text-decoration-none">
+            <div class="card h-100 card-animation">
+              <img src="images/portfolio-images/python.png" class="card-img-top" alt="Sunset over the Sea" />
+              <div class="card-body">
+                <h5 class="card-title">Python portfolio showcase</h5>
+                <p class="card-text">
+                  This comprehensive Python repository showcases a collection of diverse projects that demonstrate the utilization of powerful tools such as Selenium, BeautifulSoup, and Tkinter, enabling a seamless combination of web scraping, automation, and GUI development in Python.
+                </p>
+              </div>
             </div>
-            <h3 class="fs-2 text-body-emphasis">Web Development</h3>
-            <p>HTML | CSS | JavaScript (Vanilla) | Bootstrap</p>
+          </a>
+        </div>
 
+        <!-- JAVASCRIPT PORTFOLIO -->
+        <div class="col-lg-3">
+          <a href="https://github.com/apopjak/Javascript" class="text-decoration-none">
+            <div class="card h-100 card-animation">
+              <img src="images/portfolio-images/webdev.png" class="card-img-top" alt="Mountain View" />
+              <div class="card-body">
+                <h5 class="card-title">Javascript portfolio showcase</h5>
+                <p class="card-text">
+                  My portfolio showcases a collection of projects that encompass HTML, CSS, and JavaScript. 
+                  These projects demonstrate my proficiency in front-end web development, 
+                  where I have utilized these languages to create visually appealing and interactive websites. 
+                  The website you are currently browsing is a prime example of one of the projects 
+                  in my portfolio, highlighting my ability to design and develop engaging online 
+                  experiences.
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
+    </div>
+  </div>
+</div>
 
+<!-- footer  --> <!-- footer  --> <!-- footer  --> <!-- footer  -->
+<div class="b-example-divider"></div> 
+  
+  <div id="contact-window" class="container footer mt-5">
+   
+    <!-- GITHUB ICON -->
+    <a href="https://github.com/apopjak">
+      <img src="images/footer/github-gif.gif" alt="github footer icon" height="50px" class="animated-gif">
+    </a>  
+    
+    <!-- LINKEDIN ICON -->
+    <a href="https://www.linkedin.com/in/andrej-popjak/">
+      <img src="images/footer/linkedin-gif.gif" alt="linkedin footer icon" height="50px">
+    </a>
 
-    <!-- FOOTER     FOOTER     FOOTER     FOOTER     FOOTER     FOOTER     FOOTER     FOOTER      -->
-     
-
-
-      
-    <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    </body>
-
-
-
+    <!-- INSTAGRAM ICON -->
+    <a href="https://www.instagram.com/_mister_pj_/">
+      <img src="images/footer/instagram-gif.gif" alt="instagram footer icon" height="50px">
+    </a>    
+  
+  </div>
+  <div class="container text-center">
+    <footer class="py-3 my-4 border-top">
+      <p class="mb-3 mb-md-0 text-muted just pb-3">Contact details: apopjak@gmail.com | tel: +421 950 237 589</p>
+      <p class="mb-3 mb-md-0 text-muted just">© 2023 Andrej Popjak</p>
+  </footer>
+  </div>
+    
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
 </html>

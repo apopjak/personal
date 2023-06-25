@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
     logo.style.opacity = '1';
     logo.style.display = 'block';
     isLogoVisible = true;
-  } else if (currentScrollPos > 100 && isLogoVisible) { // Hide logo when scrolling down
+  } else if (currentScrollPos > 0 && isLogoVisible) { // Hide logo when scrolling down
     logo.style.opacity = '0';
     isLogoVisible = false;
     setTimeout(function() {
@@ -20,3 +20,45 @@ window.addEventListener('scroll', function() {
     isLogoVisible = true;
   }
 });
+
+// HOME BUTTON ANIMATIO 
+var homeButton = document.querySelector("#home");
+var homeSection = document.querySelector("#home-window");
+
+homeButton.addEventListener("click", function(){
+  homeSection.scrollIntoView({behavior: "smooth", block: "start"});
+});
+
+
+
+
+// SKILLS BUTTON REDIRECT ANIMATION
+var skillsButton = document.querySelector("#skills");
+
+var skillsSection = document.querySelector("#skills-window");
+
+skillsButton.addEventListener("click", function(){
+  skillsSection.scrollIntoView({behavior: "smooth", block: "center"});
+})
+
+
+// PORTFOLIO BUTTON REDIRECT ANIMATION
+var portfolioButton = document.querySelector("#portfolio");
+var portfolioSection = document.querySelector("#portfolio-window");
+
+portfolioButton.addEventListener("click", function(){
+  var scrollOptions = {
+    behavior: "smooth",
+    block: "center"
+  };
+  portfolioSection.scrollIntoView(scrollOptions);
+});
+
+// CONTACT BUTTON REDIRECT ANIMATION
+var contactButton = document.querySelector("#contacts");
+var contactSection = document.querySelector("#contact-window");
+
+contactButton.addEventListener("click", function(){
+  contactSection.scrollIntoView({behavior: "smooth", block: "center"})
+})
+
