@@ -1,4 +1,8 @@
 /* NAVBAR AND ANIMATION */
+#skills-window p{
+	font-weight: 500;
+}
+
 .navbar {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -16,7 +20,7 @@
 	  background-position: 0% 50%;
 	}
   }
- 
+  
   .navbar_container {
 	display: flex;
 	width: 100%;
@@ -24,11 +28,11 @@
 	flex-direction: column;
   }
 
-  #sizing {
+  .sizing {
 	transition: opacity 0.3s ease, transform 0.5s ease;
   }
   
-  #sizing:hover {
+  .sizing:hover {
 	transform: scale(1.2);
   }
   
@@ -84,8 +88,13 @@
 	cursor: pointer;
   }
   
-  #big-texts{
+  .big-texts{
 	font-family: 'Montserrat', sans-serif;
+	
+  }
+  h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
   }
   
   /* ABOUT SECTION */
@@ -95,7 +104,7 @@
   }
   
   #profile-pic {
-	max-width: 30%;
+	max-width: 20%;
 	height: auto;
   }
   
