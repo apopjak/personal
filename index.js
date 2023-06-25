@@ -64,10 +64,29 @@ contactButton.addEventListener("click", function(){
   contactSection.scrollIntoView({behavior: "smooth", block: "center"})
 })
 
-/// /////////// under line for skills button
 
 
-function activateUnderline() {
+
+// Function to activate underline for HOME button
+function activateContactButtonUnderline() {
+  var sectionTop = homeSection.offsetTop - (homeSection.offsetHeight * 0.1);
+  var sectionBottom = sectionTop + (homeSection.offsetHeight * 1.4);
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+    homeButton.classList.add('text-decoration-underline');
+  } else {
+    homeButton.classList.remove('text-decoration-underline');
+  }
+}
+
+// Activate underline for contact button on scroll
+window.addEventListener('scroll', activateContactButtonUnderline);
+
+
+/// /////////// under line for SKILLS button
+
+function activateSkillsButtonUnderline() {
   var sectionTop = skillsSection.offsetTop - (skillsSection.offsetHeight * 1);
   var sectionBottom = sectionTop + (skillsSection.offsetHeight * 1);
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
@@ -79,13 +98,16 @@ function activateUnderline() {
   }
 }
 
-window.addEventListener('scroll', activateUnderline);
+window.addEventListener('scroll', activateSkillsButtonUnderline);
 
 
 
-function activateUnderline() {
-  var sectionTop = portfolioSection.offsetTop - (portfolioSection.offsetHeight * 1);
-  var sectionBottom = sectionTop + (portfolioSection.offsetHeight * 1);
+
+/// /////////// under line for PORTFOLIO button
+
+function activatePortfolioButtonUnderline() {
+  var sectionTop = portfolioSection.offsetTop - (portfolioSection.offsetHeight * 0.8);
+  var sectionBottom = sectionTop + (portfolioSection.offsetHeight * 0.7);
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
@@ -95,4 +117,21 @@ function activateUnderline() {
   }
 }
 
-window.addEventListener('scroll', activateUnderline);
+window.addEventListener('scroll', activatePortfolioButtonUnderline);
+
+
+// Function to activate underline for contact button
+function activateContactButtonUnderline() {
+  var sectionTop = portfolioSection.offsetTop - (portfolioSection.offsetHeight * 0.1);
+  var sectionBottom = sectionTop + (portfolioSection.offsetHeight * 1.4);
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+    contactButton.classList.add('text-decoration-underline');
+  } else {
+    contactButton.classList.remove('text-decoration-underline');
+  }
+}
+
+// Activate underline for contact button on scroll
+window.addEventListener('scroll', activateContactButtonUnderline);
