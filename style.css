@@ -78,7 +78,7 @@
     border-radius: .75rem;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
 	#navbar{
 		font-size: 1.2rem;
 	}
