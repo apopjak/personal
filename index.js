@@ -1,35 +1,18 @@
-var logo = document.getElementById('logo');
-var isLogoVisible = true;
-
-window.addEventListener('scroll', function() {
-  var currentScrollPos = window.pageYOffset;
-  var logoAppearPos = window.innerHeight * 0.1; // 10% of the window's height
-
-  if (currentScrollPos === 0) {
-    logo.style.opacity = '1';
-    logo.style.display = 'block';
-    isLogoVisible = true;
-  } else if (currentScrollPos > logoAppearPos && isLogoVisible) {
-    logo.style.opacity = '0';
-    isLogoVisible = false;
-    setTimeout(function() {
-      logo.style.display = 'none';
-    }, 300);
-  } else if (currentScrollPos <= logoAppearPos && !isLogoVisible) {
-    logo.style.opacity = '1';
-    logo.style.display = 'block';
-    isLogoVisible = true;
+$(document).scroll(function() {
+  if ($(this).scrollTop() === 0) {
+    $("#logo").slideDown();
+  } else {
+    $("#logo").slideUp();
   }
 });
 
 
-// HOME BUTTON ANIMATIO 
 var homeButton = document.querySelector("#home");
-var homeSection = document.querySelector("#home-window");
 
-homeButton.addEventListener("click", function(){
-  homeSection.scrollIntoView({behavior: "smooth", block: "start"});
+homeButton.addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
 
 
 
