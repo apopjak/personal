@@ -179,4 +179,33 @@ NAV BAR SIZING */
 	  height: auto;
 	}
   }
+
+
+@media (max-width: 500px) {
+	#navbar {
+	  font-size: 0.8rem;
+	}
+
+	#logo{
+		font-size: 1.9rem;
+	}
+	#profile-pic {
+	  max-width: 50%;
+	  height: auto;
+	}
+  }
+
+  @media (max-width: 300px) {
+	#navbar {
+	  font-size: 0.5rem;
+	}
+
+	#logo{
+		font-size: 1.5rem;
+	}
+	#profile-pic {
+	  max-width: 50%;
+	  height: auto;
+	}
+  } 
   
