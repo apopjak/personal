@@ -107,7 +107,7 @@ window.addEventListener('scroll', activateSkillsButtonUnderline);
 
 function activatePortfolioButtonUnderline() {
   var sectionTop = portfolioSection.offsetTop - (portfolioSection.offsetHeight * 0.8);
-  var sectionBottom = sectionTop + (portfolioSection.offsetHeight * 0.7);
+  var sectionBottom = sectionTop + (portfolioSection.offsetHeight * 1);
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
@@ -122,8 +122,8 @@ window.addEventListener('scroll', activatePortfolioButtonUnderline);
 
 // Function to activate underline for contact button
 function activateContactButtonUnderline() {
-  var sectionTop = portfolioSection.offsetTop - (portfolioSection.offsetHeight * 0.1);
-  var sectionBottom = sectionTop + (portfolioSection.offsetHeight * 1.4);
+  var sectionTop = portfolioSection.offsetTop - (portfolioSection.offsetHeight * 0.01);
+  var sectionBottom = sectionTop + (portfolioSection.offsetHeight * 3);
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {

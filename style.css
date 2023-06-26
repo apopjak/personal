@@ -4,10 +4,29 @@
 }
 
 .navbar {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background: linear-gradient(-78deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 20s ease-in infinite;
   }
+  
+  @keyframes gradient {
+	0% {
+	  background-position: 50% 0%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+  }
+
+  .footer-bottom {
+	background: linear-gradient(21deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 20s ease-in infinite;
+	
+	}
   
   @keyframes gradient {
 	0% {
@@ -20,7 +39,7 @@
 	  background-position: 0% 50%;
 	}
   }
-  
+
   .navbar_container {
 	display: flex;
 	width: 100%;
@@ -41,15 +60,10 @@
   #logo {
 	font-size: 2.5rem;
 	font-family: 'Montserrat', sans-serif;
-	transition: opacity 0.3s ease;
-	opacity: 1;
-  }
-  
-  #logo.removing {
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity 0.5s ease 0.5s; /* Delay the transition for 0.5 seconds */
-  }
+	transition: opacity 1s ease;
+	opacity: 5;
+  } 
+
   
   #navbar {
 	font-size: 1.7rem;
@@ -125,7 +139,7 @@
   }
   
   .card-animation:hover {
-	transform: scale(1.1);
+	transform: scale(1.03);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
   }
   
@@ -133,9 +147,15 @@
   .footer {
 	display: flex;
 	justify-content: center;
+	
   }
-  
 
+  
+  #portfolio-window,
+  #contact-window {
+	width: 80%;
+	margin: 0 auto;
+  }
 
   @media (max-width: 700px) {
 	#navbar {
