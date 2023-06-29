@@ -178,6 +178,9 @@ NAV BAR SIZING */
 	  max-width: 50%;
 	  height: auto;
 	}
+	.test {
+		max-width: 100%;
+	   }
   }
 
 
