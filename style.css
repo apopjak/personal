@@ -12,6 +12,9 @@ body{
 	line-height: 1.5;
 	margin: 0;
 }
+#brand{
+	margin: 2rem;
+}
 .wrapper{
 	display: flex;
 	flex-direction: column;
@@ -26,7 +29,7 @@ body{
 	justify-content: space-between;
 	padding-top: 2rem;
 	text-align: center;	
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.357);
 }
 .icon-image{
 	cursor: pointer;
@@ -50,8 +53,7 @@ body{
 }
 .diagonal::after{
 	content: '';
-	background: linear-gradient(-78deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	
+	background: linear-gradient(-78deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);	
 	background-size: 400% 400%;
 	animation: gradient 20s ease-in infinite;
 	position: absolute;
@@ -82,4 +84,11 @@ footer{
 }
 footer li{
 	list-style: none;
+}
+.img {
+	filter: drop-shadow(3px 3px 1px #000000);
+}
+.img:hover,
+.img::after{
+	filter: drop-shadow(3px 3px 20px #00000086);
 }
